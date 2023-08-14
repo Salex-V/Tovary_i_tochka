@@ -1,0 +1,171 @@
+@media only screen and (max-width: 1024px) {
+  .header {
+    max-width: 1024px;
+  }
+
+  .container {
+    margin: 0 24px;
+  }
+
+  .header__container {
+    display: flex;
+
+    width: 997px;
+  }
+
+  .burger-menu {
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    padding: 12px 6px;
+    margin-right: 16px;
+  }
+
+  .header-nav__cart {
+    max-width: 58px;
+    margin-left: 43px;
+    margin-top: -3px;
+    margin-right: 20px;
+  }
+  /*============ секция с карточками  ============*/
+  .section-1 {
+    display: flex;
+    max-width: 1024px;
+  }
+
+  .form-group img {
+    margin-left: 468px;
+  }
+  .card-1__remains {
+    margin-left: 76px;
+  }
+  .card-1_group1 {
+    margin-left: 10px;
+  }
+
+  .card-1__cost {
+    margin-left: 30px;
+  }
+
+  /*============ 2 карточка  ============*/
+  .card-2__remains {
+    margin-left: 18px;
+  }
+
+  .card-3__remains {
+    margin-left: 18px;
+  }
+
+  .cost__real-price-3 {
+  }
+
+  .remains__number {
+    margin-left: 8px;
+  }
+
+  .card-3__cost-group2 {
+    margin-left: 44px;
+  }
+
+  .total {
+    width: 303px;
+  }
+
+  .card-payment_title {
+    margin-top: 8px;
+  }
+  .section-2 {
+    max-width: 1024px;
+  }
+  .form-group_2 {
+    max-width: 640px;
+  }
+
+  .like_and_delete {
+    margin-left: 165px;
+  }
+
+  .like_and_delete-5 {
+    margin-left: 60px;
+  }
+  .delivery {
+    max-width: 640px;
+  }
+  .payment {
+    max-width: 640px;
+  }
+
+  .firstname {
+    width: 270px;
+  }
+  .lastname {
+    width: 270px;
+  }
+
+  .mail {
+    padding-right: 0px;
+    width: 180px;
+  }
+  .number {
+    width: 180px;
+    padding-right: 15px;
+    margin-left: 5px;
+  }
+
+  .inn {
+    width: 180px;
+    margin-right: 0px;
+  }
+  .inn-error {
+    margin-left: 412px;
+  }
+
+  .footer {
+    max-width: 1024px;
+  }
+
+  .border {
+    max-width: 1024px;
+  }
+}
+
+/*============ Медиа для 320px  ============*/
+
+@media only screen and (max-width: 320px) {
+  .header {
+    display: flex;
+    max-width: 320px;
+    margin: 0 auto;
+    height: 80px;
+    padding: 0px 13px;
+  }
+
+  .container {
+    margin: 0;
+  }
+  .burger-menu {
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    padding: 12px 10px;
+    margin-right: 16px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .search {
+    display: none;
+  }
+  .header-nav__profile {
+    display: none;
+  }
+  .header-nav__cart {
+    display: none;
+  }
+
+  .section-1 {
+    max-width: 320px;
+  }
+
+  .section-2 {
+    max-width: 320px;
+  }
+}

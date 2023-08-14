@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <title>Товары и точка</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="burger-menu">
+          <a href="#" class="burger-menu__button">
+            <img src="./img/burger.svg" alt="burger" />
+          </a>
+        </div>
+
+        <div class="header__logo">Товары и точка</div>
+        <div class="search">
+          <input type="text" placeholder="Я ищу..." />
+          <img src="./img/Search.svg" alt="search" />
+        </div>
+        <div class="header-nav">
+          <div class="header-nav__profile">
+            <a href="#" class="nav_item__profile">
+              <img src="./img/profile.svg" alt="profile" />Профиль
+            </a>
+          </div>
+          <div class="header-nav__cart">
+            <a href="#" class="nav_item__cart">
+              <img src="./img/cart.svg" alt="cart" />Корзина
+            </a>
+            <div class="cart__sum">3</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ================ первые 3 карточки ================ -->
+    <section class="section-1">
+      <div class="container">
+        <div class="container_basket">
+          <h1 class="basket">Корзина</h1>
+          <div class="form-group">
+            <label>
+              <input type="checkbox" class="real-checkbox" checked />
+              <span class="custom-checkbox"></span>
+            </label>
+            <div class="select-all">Выбрать все</div>
+            <img src="./img/upArrow.png" alt="SelectAll" />
+          </div>
+
+          <!-- ================ 1 сетка для 3-х карточек ================ -->
+
+          <div class="grid-cards1">
+            <!-- ================ карточка 1 ================ -->
+            <li class="cards-item">
+              <div class="card-1">
+                <div class="card__checkbox">
+                  <label>
+                    <input
+                      type="checkbox"
+                      name=""
+                      id=""
+                      class="real-checkbox"
+                      checked
+                    />
+                    <span class="custom-checkbox"></span>
+                  </label>
+                </div>
+                <li>
+                  <img src="./img/image-1.png" alt="" class="card-1__icon" />
+                </li>
+                <li>
+                  <h2 class="card-1__title">Футболка UZcotton мужская</h2>
+                  <p class="card-1__color">Цвет: белый</p>
+                  <p class="card-1__size">Размер: 56</p>
+                  <p class="card-1_located">Коледино WB</p>
+                  <p class="card-1__organization">OOO Вайлдберриз</p>
+                  <img
+                    src="./img/icon-attention.svg"
+                    alt="attention"
+                    class="attention"
+                  />
+                </li>
+                <li class="card-1__remains">
+                  <div class="card-1_group1">
+                    <div class="counter" data-counter>
+                      <div class="counter__button counter__button_minus">-</div>
+                      <div class="counter__input">
+                        <input type="text" value="1" />
+                      </div>
+                      <div class="counter__button counter__button_plus">+</div>
+                    </div>
+                  </div>
+
+                  <p class="remains__number">Оcталось 2 шт.</p>
+                  <div class="card-1_group2">
+                    <img class="like" src="./img/icon-like.svg" alt="like" />
+                    <img
+                      class="delete-cart"
+                      src="./img/icon-cart.svg"
+                      alt="delete"
+                    />
+                  </div>
+                </li>
+                <li class="card-1__cost">
+                  <div class="card-1__cost-group1">
+                    <h3 class="cost__real-price">522</h3>
+                    <p class="cost__real-text">сом</p>
+                  </div>
+                  <div class="card-1__cost-group2">
+                    <h3 class="cost__old-price">1051 сом</h3>
+                  </div>
+                </li>
+              </div>
+            </li>
+
+            <!-- ================ карточка 2 ================ -->
+
+            <div class="grid-cards1">
+              <li class="cards-item">
+                <div class="card-2">
+                  <div class="card__checkbox">
+                    <label>
+                      <input
+                        type="checkbox"
+                        name=""
+                        id=""
+                        class="real-checkbox"
+                        checked
+                      />
+                      <span class="custom-checkbox"></span>
+                    </label>
+                  </div>
+                  <li>
+                    <img src="./img/image-2.png" alt="" class="card-2__icon" />
+                  </li>
+                  <li>
+                    <h2 class="card-2__title">
+                      Силиконовый чехол картхолдер (отверстия) для карт,
+                      прозрачный кейс бампер на Apple iPhone XR, MobiSafe
+                    </h2>
+                    <p class="card-2__color">Цвет: прозрачный</p>
+                    <p class="card-2_located">Коледино WB</p>
+                    <p class="card-2__organization">OOO Мегапрофстиль</p>
+                    <img
+                      src="./img/icon-attention.svg"
+                      alt="attention"
+                      class="attention-2"
+                    />
+                  </li>
+                  <li class="card-2__remains">
+                    <div class="card-2_group1">
+                      <img
+                        class="minus-black"
+                        src="./img/minus-black.svg"
+                        alt="-"
+                      />
+                      <div class="remains-text-card2">
+                        <input type="text" value="200" />
+                      </div>
+                      <img
+                        class="plus-black"
+                        src="./img/plus-black.svg"
+                        alt="+"
+                      />
+                    </div>
+
+                    <div class="card-1_group2">
+                      <img class="like" src="./img/icon-like.svg" alt="like" />
+                      <img
+                        class="delete-cart"
+                        src="./img/icon-cart.svg"
+                        alt="delete"
+                      />
+                    </div>
+                  </li>
+                  <li class="card-2__cost">
+                    <div class="card-2__cost-group1">
+                      <h3 class="cost__real-price-2">2 100 047</h3>
+                      <p class="cost__real-text-2">сом</p>
+                    </div>
+                    <div class="card-2__cost-group2">
+                      <h3 class="cost__old-price">2 300 047 сом</h3>
+                    </div>
+                  </li>
+                </div>
+              </li>
+            </div>
+
+            <!-- ================ карточка 3 ================ -->
+
+            <div class="grid-cards1">
+              <li class="cards-item">
+                <div class="card-3">
+                  <div class="card__checkbox">
+                    <label>
+                      <input
+                        type="checkbox"
+                        name=""
+                        id=""
+                        class="real-checkbox"
+                        checked
+                      />
+                      <span class="custom-checkbox"></span>
+                    </label>
+                  </div>
+                  <li>
+                    <img src="./img/image-3.png" alt="" class="card-3__icon" />
+                  </li>
+                  <li>
+                    <h2 class="card-3__title">
+                      Карандаши цветные Faber-Castell "Замок", набор 24 цвета,
+                      заточенные, шестигранные, <br />Faber-Castell
+                    </h2>
+                    <p class="card-3_located">Коледино WB</p>
+                    <p class="card-3__organization">OOO Вайлдберриз</p>
+                    <img
+                      src="./img/icon-attention.svg"
+                      alt="attention"
+                      class="attention-3"
+                    />
+                  </li>
+                  <li class="card-3__remains">
+                    <div class="card-3_group1">
+                      <img
+                        class="minus-black"
+                        src="./img/minus-black.svg"
+                        alt="-"
+                      />
+                      <div class="remains-text">
+                        <input type="text" value="2" />
+                      </div>
+                      <img
+                        class="plus-grey"
+                        src="./img/plus-grey.svg"
+                        alt="+"
+                      />
+                    </div>
+                    <p class="remains__number">Оcталось 2 шт.</p>
+                    <div class="card-1_group3">
+                      <img class="like" src="./img/icon-like.svg" alt="like" />
+                      <img
+                        class="delete-cart"
+                        src="./img/icon-cart.svg"
+                        alt="delete"
+                      />
+                    </div>
+                  </li>
+                  <li class="card-3__cost">
+                    <div class="card-3__cost-group1">
+                      <h3 class="cost__real-price-3">494</h3>
+                      <p class="cost__real-text-3">сом</p>
+                    </div>
+                    <div class="card-3__cost-group2">
+                      <h3 class="cost__old-price">950 сом</h3>
+                    </div>
+                  </li>
+                </div>
+              </li>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================ ИТОГО ================ -->
+        <div class="total">
+          <div class="total-summ">
+            <div class="total-text">
+              <h3>Итого</h3>
+              <div class="total-cost">
+                <h3>2 101 063</h3>
+                <p>сом</p>
+              </div>
+            </div>
+          </div>
+          <div class="total-grid">
+            <div class="grid-item">203 товара</div>
+            <div class="grid-item-right">2 302 048 сом</div>
+            <div class="grid-item">Скидка</div>
+            <div class="grid-item-right">−200 985 сом</div>
+            <div class="grid-item">Доставка</div>
+            <div class="grid-item-right">Бесплатно</div>
+          </div>
+
+          <!-- ================ доставка в пункт выдачи ================ -->
+
+          <div class="delivery-pvz">
+            <div class="del_string-1">
+              <h3>Доставка в пункт выдачи</h3>
+              <button id="btn-modal" class="btn-modal" data-path="form-popup">
+                <img src="./img/pen.svg" alt="" />
+              </button>
+            </div>
+            <div class="del_string-2">
+              <p>Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+            </div>
+            <div class="del_string-3">
+              <p>5–8 фев</p>
+            </div>
+            <div class="del-free">
+              <img src="./img/price shipping.svg" alt="sber logo" />
+              <div class="del-free_text">
+                <h3>Обратная доставка товаров на склад при отказе —</h3>
+                <p>бесплатно</p>
+              </div>
+            </div>
+
+            <!-- ================ Оплата картой ================ -->
+            <div class="card-payment">
+              <div class="card-payment_title">
+                <h2>Оплата картой</h2>
+                <a href="#popup"><img src="./img/pen.svg" alt="pen" /> </a>
+              </div>
+              <div class="payment_card-number">
+                <img src="./img/mir.svg" alt="МИР" />
+                <p>1234 12•• •••• 1234</p>
+              </div>
+
+              <div class="payment_checkbox">
+                <div class="checbox-string-1">
+                  <label>
+                    <input type="checkbox" width="50px" height="50px" />
+                    <p>Списать оплату сразу</p>
+                  </label>
+                </div>
+                <p>Спишем оплату с карты при получении</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================ кнопка заказать ================ -->
+          <button class="btn"><p>Заказать</p></button>
+          <div class="policy">
+            <img src="./img/Frame.svg" alt="agree" />
+            <p>
+              Соглашаюсь с правилами пользования торговой площадкой и возврата
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================ 2-я сетка для 3 карточек ================ -->
+    <section class="section-2">
+      <div class="container">
+        <div class="form-group_2">
+          <h2 class="no-products">Отсутствуют · 3 товара</h2>
+          <img src="./img/upArrow.png" alt="SelectAll" />
+        </div>
+        <!-- ================ сетка-2 ================ -->
+        <ul class="grid-cards2">
+          <!-- ================ карточка 4 ================ -->
+          <li class="card-item-4">
+            <img src="./img/image-4.png" alt="image-4" class="card_4-icon" />
+            <div class="about-cards">
+              <h2 class="card-4__title">Футболка UZcotton мужская</h2>
+              <div class="options">
+                <p class="card-4__color">Цвет: белый</p>
+                <p class="card-4__size">Размер: 56</p>
+              </div>
+            </div>
+            <div class="like_and_delete">
+              <img
+                src="./img/icon-like.svg"
+                alt="like"
+                class="like__no-products"
+              />
+              <img
+                src="./img/icon-cart.svg"
+                alt="delete"
+                class="delete__no-products"
+              />
+            </div>
+          </li>
+          <!-- ================ карточка 5 ================ -->
+          <li class="card-item-5">
+            <img src="./img/image-5.png" alt="image-5" class="card_4-icon" />
+            <div class="about-cards">
+              <h2 class="card-4__title">
+                Силиконовый чехол картхолдер (отверстия) для карт, прозрачный
+                кейс бампер на Apple iPhone XR, MobiSafe
+              </h2>
+              <div class="options">
+                <p class="card-4__color">Цвет: прозрачный</p>
+              </div>
+            </div>
+            <div class="like_and_delete-5">
+              <img
+                src="./img/icon-like.svg"
+                alt="like"
+                class="like__no-products"
+              />
+              <img
+                src="./img/icon-cart.svg"
+                alt="delete"
+                class="delete__no-products"
+              />
+            </div>
+          </li>
+          <!-- ================ карточка 6 ================ -->
+          <li class="card-item-6">
+            <img src="./img/image-6.png" alt="image-6" class="card_4-icon" />
+            <div class="about-cards">
+              <h2 class="card-4__title">
+                Карандаши цветные Faber-Castell "Замок", набор 24 цвета,
+                заточенные, шестигранные, Faber-Castell
+              </h2>
+              <div class="options"></div>
+            </div>
+            <div class="like_and_delete-5">
+              <img
+                src="./img/icon-like.svg"
+                alt="like"
+                class="like__no-products"
+              />
+              <img
+                src="./img/icon-cart.svg"
+                alt="delete"
+                class="delete__no-products"
+              />
+            </div>
+          </li>
+        </ul>
+
+        <!-- ================ СПОСОБ ДОСТАВКИ ================ -->
+
+        <div class="delivery">
+          <div class="string-1">
+            <h2>Способ доставки</h2>
+            <button id="btn-modal" class="btn-modal" data-path="form-popup">
+              <p>Изменить</p>
+            </button>
+          </div>
+
+          <!-- ================ пункт выдачи ================ -->
+          <div class="string-2">
+            <h3>Пункт выдачи</h3>
+            <div class="pvz">
+              <h3>Бишкек, улица Ахматбека Суюмбаева, 12/1</h3>
+              <div class="rating_time">
+                <img src="./img/star_fill.svg" alt="star" />
+                <p>4.99</p>
+                <p>Ежедневно с 10 до 21</p>
+              </div>
+            </div>
+          </div>
+          <!-- ================ стоимость доставки ================ -->
+          <div class="string-3">
+            <h3>Стоимость доставки</h3>
+            <p>Бесплатно</p>
+          </div>
+          <!-- ================ первая доставка ================ -->
+          <div class="string-4">
+            <h3>5—6 февраля</h3>
+            <img src="./img/image-1-small.png" alt="image1" />
+            <img src="./img/image-2-small.png" alt="image2" />
+            <img src="./img/image-3-small.png" alt="image3" />
+            <img class="number-184" src="./img/184.svg" alt="184" />
+            <img class="number-2" src="./img/2.svg" alt="2" />
+          </div>
+          <!-- ================ вторая доставка ================ -->
+          <div class="string-5">
+            <h3>7—8 февраля</h3>
+            <img src="./img/image-2-small.png" alt="image2" />
+            <img class="number-16" src="./img/16.svg" alt="16" />
+          </div>
+          <!-- ================ условия возврата ================ -->
+          <div class="string-6">
+            <img src="./img/price shipping.svg" alt="sber-icon" />
+            <h3>Обратная доставка товаров на склад при отказе —</h3>
+            <p>бесплатно</p>
+          </div>
+        </div>
+
+        <!-- ================ СПОСОБ ОПЛАТЫ ================ -->
+        <div class="payment">
+          <div class="method">
+            <h2>Способ оплаты</h2>
+            <a href="#popup">
+              <p>Изменить</p>
+            </a>
+          </div>
+          <div class="card-number">
+            <img src="./img/mir.svg" alt="МИР" />
+            <h3>1234 56•• •••• 1234</h3>
+            <p>01/30</p>
+          </div>
+          <div class="additional-information">
+            <p>Спишем оплату с карты при получении</p>
+          </div>
+        </div>
+
+        <!-- ================ ПОЛУЧАТЕЛЬ ================ -->
+        <div class="recipient">
+          <h2 class="title">Получатель</h2>
+          <div class="form-name">
+            <!-- ================ имя фамилия ================ -->
+            <input type="text" placeholder="Имя" class="firstname" />
+            <input type="text" placeholder="Фамилия" class="lastname" />
+          </div>
+          <!-- ================ почта номер ИНН ================ -->
+          <div class="other-form">
+            <input type="email" class="mail" placeholder="Почта" />
+            <input type="number" class="number" placeholder="Телефон" />
+            <input type="number" class="inn" placeholder="ИНН" />
+          </div>
+          <div class="inn-error">Для таможенного оформления</div>
+        </div>
+      </div>
+    </section>
+    <!-- ================ ПОДВАЛ ================ -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="border"></div>
+        <p>© 2022 ООО «Товары и точка»</p>
+      </div>
+    </footer>
+    <!-- ================ Модальное окно 1 ================ -->
+    <div id="popup" class="popup">
+      <a href="#forpopup" class="popup__area"></a>
+      <div class="popup__body">
+        <div class="popup__content">
+          <div class="popup__title">
+            <h2>Способ оплаты</h2>
+            <a href="#" class="popup__close">
+              <img src="./img/search-close.svg" alt="close" />
+            </a>
+          </div>
+
+          <div class="popup__cards">
+            <div class="cards-item">
+              <input type="radio" checked />
+              <img src="./img/mir-icon.svg" alt="mir" />
+              <p>1234 56•• •••• 1234</p>
+            </div>
+
+            <div class="cards-item">
+              <input type="radio" />
+              <img src="./img/visa-icon.svg" alt="visa" />
+              <p>1234 56•• •••• 1234</p>
+            </div>
+
+            <div class="cards-item">
+              <input type="radio" />
+              <img src="./img/mastercard-icon.svg" alt="mc" />
+              <p>1234 56•• •••• 1234</p>
+            </div>
+
+            <div class="cards-item">
+              <input type="radio" />
+              <img src="./img/maestro-icon.svg" alt="maestro" />
+              <p>1234 56•• •••• 1234</p>
+            </div>
+          </div>
+          <div class="popup__btn-wrapper">
+            <div class="popup__btn">
+              <input type="button" />
+              <p>Выбрать</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================ Модальное окно 2 ================ -->
+
+    <div class="modals">
+      <div class="modal-overlay">
+        <div class="modal modal" data-target="form-popup">
+          <div class="modal-content">
+            <div class="modal__title">
+              <h2>Способ доставки</h2>
+              <img src="./img/search-close.svg" alt="close" />
+            </div>
+            <div class="modal__delivery">
+              <p class="delivery_pvz">В пункт выдачи</p>
+              <p class="delivery_courier">Курьером</p>
+            </div>
+            <h2 class="adres-title">Мои адреса</h2>
+            <div class="modal_adrasses">
+              <input type="radio" checked />
+              <p>Бишкек, улица Табышалиева, 57</p>
+              <img src="./img/icon-20.svg" alt="delete" />
+
+              <input type="radio" />
+              <p>Бишкек, улица Жукеева-Пудовкина, 77/1</p>
+              <img src="./img/icon-20.svg" alt="delete" />
+
+              <input type="radio" />
+              <p>Бишкек, микрорайон Джал, улица Ахунбаева Исы, 67/1</p>
+              <img src="./img/icon-20.svg" alt="delete" />
+            </div>
+            <div class="modal__select">
+              <button>
+                <p>Выбрать</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/counter.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

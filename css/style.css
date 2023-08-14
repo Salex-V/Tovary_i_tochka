@@ -1,0 +1,1790 @@
+:root {
+  --orange: #f55123;
+  --purple: #6725a8;
+  --magenta: #cb11ab;
+  --green: #0cb477;
+  --white: #fff;
+  --grey: #a0a0a4;
+  --smoky: #f6f6fa;
+}
+/*============ reset css start ============*/
+*,
+*::before,
+*::after {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  box-sizing: border-box;
+}
+
+a,
+a:visited,
+a:link {
+  color: inherit;
+  text-decoration: none;
+  color: var(--white);
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+ul {
+  list-style: none;
+}
+img,
+svg {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*============ Шапка ============*/
+.header {
+  display: flex;
+  width: 1400px;
+  margin: 0 auto;
+  height: 112px;
+  background-color: var(--purple);
+}
+.container {
+  margin: 0 24px;
+}
+
+.header__container {
+  display: flex;
+  padding: 20px 0px;
+  width: 1356px;
+}
+
+/*============ БУРГЕР МЕНЮ ============*/
+
+.burger-menu {
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  padding: 12px 10px;
+  margin-right: 16px;
+  width: 48px;
+  height: 48px;
+}
+
+.burger-menu:hover {
+  border: 2px solid rgb(255, 255, 255);
+  transition: 0.1s;
+}
+
+.burger-menu .menu__burger img {
+  width: 32px;
+  height: 24px;
+}
+
+/*============ logo ============*/
+
+.header__logo {
+  display: flex;
+  flex-wrap: nowrap;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 108px;
+  color: var(--white);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.56px;
+  color: var(--white);
+  font-variant: all-small-caps;
+}
+
+/*============ строка поиска ============*/
+.search {
+  padding: 0 20px;
+  display: flex;
+  margin-left: 32px;
+  width: 1000px;
+  height: 48px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 36px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.search img {
+  opacity: 0.6;
+}
+
+input::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
+input {
+  background: transparent;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.header-nav {
+  display: flex;
+  margin-left: 32px;
+}
+
+/*============ Profile ============*/
+
+.header-nav__profile {
+  max-width: 58px;
+  margin-top: -2px;
+}
+
+.header-nav__profile a {
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.header-nav__profile a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.nav_item__profile img {
+  margin-left: 17px;
+  margin-bottom: 5px;
+}
+
+/*============ Корзина ============*/
+
+.header-nav__cart {
+  max-width: 58px;
+  margin-left: 43px;
+  margin-top: -3px;
+}
+
+.header-nav__cart a {
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.header-nav__cart a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.nav_item__cart img {
+  position: relative;
+  margin-left: 7px;
+  margin-bottom: 6px;
+}
+
+.cart__sum {
+  position: absolute;
+  font-family: Segoe UI;
+  font-size: 10px;
+  font-weight: 700;
+  width: 16px;
+  height: 16px;
+  color: var(--white);
+  background-color: var(--orange);
+  border-radius: 50%;
+  padding: 2px 0 0 5px;
+  margin-left: 28px;
+  margin-top: -54px;
+}
+/*============ section content ============*/
+.section-1 {
+  display: flex;
+  width: 1400px;
+  margin: 0 auto;
+  background-color: var(--smoky);
+  margin-top: -24px;
+  border-radius: 24px 24px 0 0;
+  height: 651px;
+}
+
+.container_basket {
+  max-width: 891px;
+}
+
+/*============ basket text ============*/
+
+.basket {
+  display: flex;
+  align-items: center;
+  padding-top: 34px;
+  color: var(--text-black, #000);
+  font-family: Segoe UI;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.28px;
+}
+
+/* ========== Select all ========== */
+
+.form-group {
+  display: flex;
+  align-items: center;
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.real-checkbox {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.real-checkbox:focus + .custom-checkbox {
+  box-shadow: 0 0 0 1px rgb(15, 5, 13), 0 0 3px rgb(255, 0, 153);
+}
+
+.custom-checkbox {
+  position: relative;
+  display: inline-block;
+  margin-top: 28px;
+  width: 22px;
+  height: 22px;
+  border-radius: 7px;
+  background-color: var(--magenta);
+  vertical-align: sub;
+}
+
+.custom-checkbox::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 11px;
+  background-image: url(../img/check.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s ease-in;
+}
+
+.real-checkbox:checked + .custom-checkbox::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.select-all {
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 11px;
+  margin-bottom: -22px;
+}
+
+.form-group img {
+  width: 20px;
+  height: 20px;
+  margin-left: 747px;
+  margin-bottom: -22px;
+}
+
+/* ========== cards ========== */
+
+.grid-cards1 {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  max-width: 893px;
+  max-height: 108px;
+}
+
+/*============ CARD 1 ============*/
+
+.card-1 {
+  margin-top: 20px;
+}
+
+.card__checkbox {
+  margin-bottom: 110px;
+}
+
+.card-1__icon {
+  border-radius: 8px;
+  margin-top: 11px;
+  margin-left: 12px;
+}
+.card-1__title {
+  margin-left: 16px;
+  margin-top: 12px;
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.card-1__color {
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  margin-top: 6px;
+  margin-left: 16px;
+}
+.card-1__size {
+  position: absolute;
+  margin-top: -16px;
+  margin-left: 106px;
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+.card-1_located {
+  color: var(--grey);
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  margin-left: 16px;
+  margin-top: 8px;
+}
+.card-1__organization {
+  color: var(--grey);
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  margin-left: 16px;
+  margin-top: 4px;
+}
+.attention {
+  position: absolute;
+  margin-top: -18px;
+  margin-left: 134px;
+}
+
+/*============ card 1 количество  ============*/
+
+.card-1__remains {
+  margin-left: 336px;
+  margin-bottom: 70px;
+}
+
+.card-1_group1 {
+  width: 100px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  margin-top: 10px;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+.card-1_group1 img {
+  width: 12px;
+  height: 18px;
+}
+
+.counter {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-column-gap: 7px;
+  column-gap: 7px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.counter__button {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 30px;
+  flex: 0 0 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.counter__button_minus.disabled {
+  color: #c4c4c4;
+  cursor: default;
+}
+
+.counter__input {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 30px;
+  flex: 0 0 30px;
+}
+
+.counter__input input {
+  width: 100%;
+  border: none;
+  text-align: center;
+}
+
+.minus-grey {
+  margin-left: 10px;
+}
+
+.plus-black {
+  margin-right: 8px;
+}
+
+.remains-text {
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: -1px;
+  text-align: center;
+  width: 10px;
+}
+
+.remains__number {
+  color: #ff3b30;
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  margin-top: 8px;
+  margin-left: 1px;
+}
+
+.card-1_group2 {
+  margin-top: 8px;
+  text-align: right;
+  margin-right: -0px;
+}
+
+.like {
+  margin-right: 12px;
+}
+
+/*============ card 1 цена ============*/
+
+.card-1__cost {
+  margin-left: 39px;
+}
+
+.card-1__cost-group1 {
+  display: flex;
+}
+
+.card-1__cost-group2 {
+  display: flex;
+}
+
+.cost__real-price {
+  color: var(--text-black, #000);
+  text-align: right;
+  font-family: Segoe UI;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  margin-left: 18px;
+  margin-top: 8px;
+}
+
+.cost__real-text {
+  text-align: right;
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin-left: 4px;
+  margin-top: 12px;
+}
+
+.cost__old-price {
+  color: var(--system-gray, #a0a0a4);
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: line-through;
+  margin-left: 32px;
+  margin-top: 5px;
+  border-bottom: dashed 1px rgba(0, 0, 0, 0.2);
+}
+
+/*============ CARD-2  ============*/
+.card-2 {
+  margin-top: 40px;
+}
+.card-2__icon {
+  border-radius: 8px;
+  margin-top: 30px;
+  margin-left: 12px;
+}
+
+.card-2__title {
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 275px;
+  margin-left: 16px;
+  margin-top: 31px;
+}
+.card-2__color {
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  margin-top: 7px;
+  margin-left: 16px;
+}
+
+.card-2_located {
+  color: var(--grey);
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  margin-left: 16px;
+  margin-top: 8px;
+}
+.card-2__organization {
+  color: var(--grey);
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  margin-left: 16px;
+  margin-top: 4px;
+}
+
+.attention-2 {
+  position: absolute;
+  margin-top: -18px;
+  margin-left: 150px;
+}
+
+/*============ CARD 2 column-2 ============*/
+
+.card-2__remains {
+  margin-left: 268px;
+  margin-top: 20px;
+}
+.card-2_group1 {
+  width: 100px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  margin-top: 10px;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+.card-2_group1 img {
+  width: 12px;
+  height: 18px;
+}
+
+.remains-text-card2 {
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: -1px;
+  text-align: center;
+  width: 30px;
+}
+
+.minus-black {
+  margin-left: 10px;
+}
+
+.cost__real-price-2 {
+  display: flex;
+  text-align: left;
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.cost__real-text-2 {
+  position: absolute;
+  text-align: right;
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin-left: 96px;
+  margin-top: -24px;
+}
+.card-2__cost-group2 {
+  margin-top: 6px;
+  margin-left: 10px;
+}
+
+/*============ CARD 3 ============*/
+
+.card-3 {
+  margin-top: 128px;
+}
+
+.card-3__icon {
+  border-radius: 8px;
+  margin-top: 118px;
+  margin-left: 12px;
+}
+.card-3__title {
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 275px;
+  margin-left: 16px;
+  margin-top: 119px;
+}
+.card-3_located {
+  color: var(--grey);
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  margin-left: 16px;
+  margin-top: 8px;
+}
+.card-3__organization {
+  color: var(--grey);
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  margin-left: 16px;
+  margin-top: 4px;
+}
+.attention-3 {
+  position: absolute;
+  margin-top: -18px;
+  margin-left: 134px;
+}
+
+/*============ Card 3 Количество ============*/
+
+.card-3__remains {
+  margin-left: 268px;
+  margin-top: 108px;
+}
+.card-3_group1 {
+  width: 100px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  margin-top: 10px;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+.card-3_group1 img {
+  width: 12px;
+  height: 18px;
+}
+
+.remains-text {
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: -1px;
+}
+.plus-grey {
+  margin-right: 10px;
+}
+
+.card-1_group3 {
+  margin-top: 8px;
+  margin-left: 44px;
+}
+
+/*============ card 3 цена ============*/
+
+.cost__real-price-3 {
+  text-align: right;
+  font-family: Segoe UI;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  margin-right: 34px;
+  margin-top: 116px;
+}
+.cost__real-text-3 {
+  text-align: right;
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: -24px;
+}
+.card-3__cost-group2 {
+  margin-left: 46px;
+}
+
+/*======= ИТОГО =======*/
+
+.total {
+  margin-top: 22px;
+  margin-left: 8px;
+  display: flex;
+  width: 429px;
+  height: 572px;
+  flex-direction: column;
+  padding: 16px 24px 24px 24px;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3),
+    0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  background-color: rgb(255, 255, 255);
+}
+
+.total-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-text h3 {
+  font-family: Segoe UI;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.24px;
+}
+.total-cost {
+  display: flex;
+}
+
+.total-cost h3 {
+  font-family: Segoe UI;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.24px;
+  margin-right: 5px;
+}
+
+.total-cost p {
+  margin-top: 4px;
+  font-family: Segoe UI;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+}
+
+.total-grid {
+  display: grid;
+  grid-template: repeat(1, 1fr) / repeat(2, 1fr);
+  margin-top: 8px;
+  margin-bottom: 24px;
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.grid-item {
+}
+.grid-item-right {
+  text-align: right;
+}
+
+/*============ Доставка в пункт выдачи ============*/
+
+.delivery-pvz {
+}
+.del_string-1 {
+  display: flex;
+  justify-content: space-between;
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.del_string-2 {
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  margin-top: 4px;
+}
+.del_string-3 {
+  font-family: Segoe UI;
+  font-size: 13px;
+  width: 47px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--magenta);
+  margin-top: 4px;
+  border-bottom: 1px rgba(203, 17, 171, 0.2) dashed;
+}
+
+.del-free {
+  display: flex;
+  padding: 8px 8px 12px 8px;
+  background-color: var(--smoky);
+  border-radius: 8px;
+  margin-top: 12px;
+}
+.del-free_text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+.del-free_text h3 {
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+.del-free_text p {
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--green);
+}
+
+/*============ Оплата картой ============*/
+
+.card-payment {
+  display: flex;
+  flex-direction: column;
+}
+.card-payment_title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 26px;
+}
+
+.card-payment_title h2 {
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.payment_card-number {
+  display: flex;
+  margin-top: 4px;
+}
+
+.payment_card-number img {
+}
+.payment_card-number p {
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  margin-left: 9px;
+  margin-top: 2px;
+}
+
+.payment_checkbox {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--smoky);
+  margin-top: 12px;
+  padding: 8px 8px 12px 8px;
+  border-radius: 8px;
+  position: relative;
+}
+.checbox-string-1 {
+  display: flex;
+}
+
+.checbox-string-1 input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+}
+
+.payment_checkbox p {
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  margin-top: 4px;
+}
+
+.checbox-string-1 p {
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  position: absolute;
+  margin-top: -24px;
+  margin-left: 30px;
+}
+
+/*============ кнопка заказать ============*/
+
+.btn {
+  display: flex;
+  height: 44px;
+  padding: 0px 32px 5px 32px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--magenta);
+  margin-top: 24px;
+}
+
+.btn p {
+  color: #fff;
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 2px;
+}
+
+.policy {
+  display: flex;
+  margin-top: 6px;
+}
+.policy img {
+}
+.policy p {
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  margin-top: 6px;
+  margin-left: 8px;
+}
+
+/*============ 3 ЧЕРНО-БЕЛЫХ КАРТОЧКИ ============*/
+.section-2 {
+  display: flex;
+  width: 1400px;
+  margin: 0 auto;
+  background-color: var(--smoky);
+}
+
+.form-group_2 {
+  display: flex;
+  justify-content: space-between;
+  width: 891px;
+  border-bottom: 1px solid #0000001a;
+  padding-bottom: 18px;
+}
+
+.form-group_2 img {
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+}
+
+.no-products {
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+/* ========== сетка ========== */
+/* ========== карточка 4 ========== */
+.card-item-4 {
+  display: flex;
+  margin-top: 12px;
+}
+
+.card_4-icon {
+  width: 72px;
+  height: 96px;
+  border-radius: 8px;
+}
+.card-4__title {
+  max-width: 309px;
+  max-height: 72px;
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--grey);
+}
+
+.about-cards {
+  margin-left: 16px;
+}
+.options {
+  display: flex;
+  margin-top: 8px;
+}
+.card-4__color {
+  color: var(--grey);
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+.card-4__size {
+  margin-left: 16px;
+  color: var(--grey);
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+/*============ Добавить в избраное и удалить ============*/
+.like_and_delete {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 415px;
+}
+.like__no-products {
+  margin-right: 16px;
+}
+/*============ карточка 5 ============*/
+.card-item-5 {
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.like_and_delete-5 {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 312px;
+}
+/*============ карточка 6 ============*/
+
+.card-item-6 {
+  display: flex;
+}
+
+/*======= СПОСОБ ДОСТАВКИ =======*/
+
+.delivery {
+  width: 891px;
+  height: 362px;
+  display: flex;
+  padding: 16px 24px 24px 24px;
+  margin-top: 40px;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 16px;
+  background: var(--white);
+  margin-bottom: 16px;
+}
+.string-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.string-1 h2 {
+  font-family: Segoe UI;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.24px;
+}
+
+.string-1 p {
+  color: var(--magenta);
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 7px;
+}
+/*======= Пункт выдачи =======*/
+.string-2 {
+  display: flex;
+  margin-top: -8px;
+}
+
+.string-2 h3 {
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+/*======= адрес, рейтинг, время доставки =======*/
+.pvz {
+  margin-left: 78px;
+}
+
+.pvz h3 {
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.rating_time {
+  display: flex;
+}
+
+.pvz p {
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 4px;
+}
+/*======= Стоимость доставки =======*/
+
+.string-3 {
+  display: flex;
+  font-family: Segoe UI;
+  margin-top: -12px;
+}
+
+.string-3 h3 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  margin-right: 32px;
+}
+
+.string-3 p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/*======= Первая доставка =======*/
+
+.string-4 {
+  display: flex;
+  font-family: Segoe UI;
+  margin-top: -8px;
+}
+
+.string-4 h3 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  margin-right: 82px;
+}
+
+.string-4 img {
+  margin-right: 8px;
+  position: relative;
+}
+
+.number-184 {
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  margin-left: -80px;
+  margin-top: -10px;
+}
+.number-2 {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: -10px;
+}
+
+/*======= вторая доставка =======*/
+
+.string-5 {
+  display: flex;
+  margin-top: -8px;
+}
+
+.string-5 h3 {
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  margin-right: 82px;
+}
+
+.string-5 img {
+  position: relative;
+}
+
+.number-16 {
+  position: absolute;
+  width: 25px;
+  height: 18px;
+  margin-left: -17px;
+  margin-top: -7px;
+}
+
+/*======= условия возврата =======*/
+
+.string-6 {
+  display: flex;
+  margin-top: 1px;
+}
+.string-6 img {
+  margin-top: -2px;
+}
+.string-6 h3 {
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+
+  margin-left: 8px;
+}
+
+.string-6 p {
+  color: var(--green);
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  margin-left: 4px;
+}
+
+/*======= СПОСОБ ОПЛАТЫ =======*/
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 24px 24px 24px;
+  width: 891px;
+  height: 136px;
+  background-color: #fff;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.method {
+  display: flex;
+  justify-content: space-between;
+}
+
+.method h2 {
+  font-family: Segoe UI;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.24px;
+  margin-bottom: 1px;
+}
+
+.method p {
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--magenta);
+  margin-top: 7px;
+}
+/*======= данные карты =======*/
+
+.card-number {
+  display: flex;
+  margin-top: 14px;
+}
+
+.card-number img {
+  background-color: #f6f6fa;
+  margin-right: 8px;
+}
+
+.card-number h3 {
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-right: 12px;
+}
+
+.card-number p {
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/*======= дополнительная информация =======*/
+.additional-information {
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--grey);
+  margin-top: 8px;
+}
+
+/*======= ПОЛУЧАТЕЛЬ =======*/
+
+.recipient {
+  display: flex;
+  flex-direction: column;
+  height: 216px;
+  padding: 16px 24px 24px 24px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  margin-bottom: 26px;
+}
+
+.recipient input::-webkit-input-placeholder {
+  color: #a0a0a4;
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.title {
+  font-family: Segoe UI;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.24px;
+  margin-bottom: 34px;
+  z-index: 5;
+}
+
+/*======= имя + фамилия =======*/
+
+.form-name {
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #11111b;
+}
+.firstname {
+  width: 338px;
+  margin-right: 20px;
+  border-bottom: 1px solid #00000033;
+  padding-bottom: 3px;
+}
+.lastname {
+  width: 338px;
+  border-bottom: 1px solid #00000033;
+  padding-bottom: 3px;
+}
+
+/*======= почта, фамилия, ИНН =======*/
+
+.other-form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 42px;
+}
+.mail {
+  border-bottom: 1px solid #00000033;
+  padding-right: 24px;
+  padding-bottom: 3px;
+}
+.number {
+  border-bottom: 1px solid #00000033;
+  margin-left: 10px;
+  padding-right: 24px;
+  padding-bottom: 3px;
+}
+
+.inn {
+  border-bottom: 1px solid #00000033;
+  margin-right: 167px;
+  padding-bottom: 3px;
+}
+.inn-error {
+  position: absolute;
+  font-family: Segoe UI;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  margin-top: 160px;
+  margin-left: 482px;
+}
+
+/*======= ПОДВАЛ =======*/
+
+.footer {
+  background-color: var(--purple);
+  width: 1400px;
+  margin: 0 auto;
+  height: 88px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+.border {
+  background-color: var(--smoky);
+  height: 24px;
+  width: 1400px;
+  border-radius: 0 0 24px 24px;
+}
+
+.footer-content p {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  margin-top: 24px;
+}
+
+/*======= Модальное окно 1 =======*/
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 0, 10, 0.3);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup:target .popup__content {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.popup__area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup__content {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  color: #000;
+  max-width: 400px;
+  position: relative;
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+  transform: translate(0px, -100%);
+}
+.popup__close {
+  width: 24px;
+  height: 24px;
+}
+
+.popup__title {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px 13px 24px;
+}
+
+.popup__title h2 {
+  font-family: Segoe UI;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+}
+
+.popup__cards {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  padding: 0px 22px 123px 22px;
+}
+
+.cards-item {
+  display: flex;
+  align-items: center;
+}
+
+.cards-item input {
+  margin-right: 8px;
+}
+
+.cards-item img {
+  margin-right: 4px;
+  width: 32px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: var(--smoky);
+}
+
+.popup__btn-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px 24px 24px;
+}
+
+.popup__btn {
+  display: flex;
+  height: 44px;
+  padding: 0px 48px 5px 48px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background-color: var(--magenta);
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+/*======= Модальное окно 2 =======*/
+
+.btn-modal {
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.modal-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal {
+  background-color: #fff;
+  width: 500px;
+  max-height: 408px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  border-radius: 20px;
+}
+
+.modal-overlay--visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal--visible {
+  display: block;
+}
+
+/*======= Контент модального окна 2 =======*/
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px 13px 24px;
+}
+
+.modal__title h2 {
+  font-family: Segoe UI;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+}
+.modal__delivery {
+  display: flex;
+  padding: 0px 22px 24px 22px;
+}
+
+.modal__delivery p:hover {
+  border-radius: 24px;
+  border: 2px solid #cb11ab;
+}
+
+.modal__delivery p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 2px solid rgba(203, 17, 171, 0.15);
+  width: 224px;
+  height: 34px;
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.delivery_pvz {
+  margin-right: 8px;
+}
+
+.modal_adrasses {
+  display: grid;
+  grid-template-rows: repeat(1, 3fr);
+  grid-template-columns: 20px 1fr 20px;
+  padding: 0 22px 33px 22px;
+  gap: 8px;
+}
+
+.adres-title {
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  padding: 0 22px;
+  margin-bottom: 8px;
+}
+
+.modal_adrasses p {
+  display: flex;
+  align-items: center;
+  height: 36px;
+}
+.modal_adrasses img {
+  margin-top: 6px;
+}
+
+.modal__select {
+  display: flex;
+  padding: 16px 24px 24px 24px;
+}
+
+.modal__select p {
+  display: flex;
+  height: 44px;
+  padding: 0px 48px;
+  border-radius: 8px;
+  background: var(--system-magenta, #cb11ab);
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  align-items: center;
+}
+
+/*======= TEST =======*/
